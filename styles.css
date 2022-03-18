@@ -1,172 +1,177 @@
 :root {
-  --color1: #392061;
-  --color2: #FB8B24;
-  --color3: #b4b5E3;
-  --color4: #D6E5E3;
-  --color5: #fff;
-  --color6: #c4b5E3;
-  --subBack: #bbb;
-  --ball1: #FB8B24;
-  --ball2: #294059;
+    --color1: #392061;
+    --color2: #FB8B24;
+    --color3: #b4b5E3;
+    --color4: #D6E5E3;
+    --color5: #fff;
+    --color6: #c4b5E3;
+    --subBack: #bbb;
+    --ball1: #FB8B24;
+    --ball2: #294059;
 }
 
 body {
-  margin: 0 auto;
-  background-color: var(--color5);
+    margin: 0 auto;
+    background-color: var(--color5);
 }
 
 .intro {
-  margin: 0 auto;
-  width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
 }
 
-.intro p {
-  font-size: 2rem;
-  padding: 0;
-}
+    .intro p {
+        font-size: 1rem;
+        padding: 0;
+    }
 
-.intro p:last-child {
-  font-size: 3rem;
-  text-align: center;
-}
+        .intro p:last-child {
+            font-size: 1rem;
+            text-align: center;
+        }
 
 .content {
-  margin: 0 auto;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .sub {
-  background-color: #eee;
-  padding: 4rem 4rem;
-  margin: 0 2rem;
-  border-radius: 1rem;
-  align-self: stretch;
+    background-color: #eee;
+    padding: 0;
+    margin: 0 2rem;
+    border-radius: 1rem;
+    align-self: stretch;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #canvas {
-  background-color: var(--color5);
-  min-width: 500px;
-  min-height: 500px;
-  align-self: auto;
-  padding: 0;
+    background-color: var(--color5);
+    width: 40vw;
+    height: 40vw;
+    align-self: auto;
+    padding: 0;
 }
 
 h1 {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  font-size: 4rem;
-  color: var(--color2);
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color2);
 }
 
 p {
-  font-family: Tahoma;
-  color: #6d78a5;
+    font-family: Tahoma;
+    color: #6d78a5;
 }
 
 /*styles for canvas section*/
 canvas {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /*styles for equation section*/
 .equation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.equation p {
-  font-size: 3rem;
-  padding: 0.2em;
-  cursor: default;
-}
+    .equation p {
+        font-size: 2rem;
+        padding: 0.2em;
+        cursor: default;
+    }
 
 button {
-  background-color: var(--color4);
-  border: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 30rem 30rem 10rem 10rem;
-  font-size: 2rem;
-  box-shadow: 2px 1px 1px var(--color3);
-  transition: background-color 0.1s;
-  cursor: pointer;
-  color: #6d78a5;
+    background-color: var(--color4);
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 30rem 30rem 10rem 10rem;
+    font-size: 2rem;
+    box-shadow: 2px 1px 1px var(--color3);
+    transition: background-color 0.1s;
+    cursor: pointer;
+    color: #6d78a5;
 }
 
-button:hover {
-  background-color: white;
-  box-shadow: 1px 0px 1px var(--color3);
-}
+    button:hover {
+        background-color: white;
+        box-shadow: 1px 0px 1px var(--color3);
+    }
 
 #upB, #upM {
-  border-radius: 30rem 30rem 10rem 10rem;
+    border-radius: 30rem 30rem 10rem 10rem;
 }
 
 #downB, #downM {
-  border-radius: 10rem 10rem 30rem 30rem;
+    border-radius: 10rem 10rem 30rem 30rem;
 }
 
 .adjustables #slope, #yIntercept {
-  border-radius: 1rem;
-  background-color: white;
+    border-radius: 1rem;
+    background-color: white;
 }
 
 #slope {
-  color: var(--color2);
+    color: var(--color2);
 }
 
 #yIntercept {
-  color: var(--color6);
+    color: var(--color6);
 }
 
 /*styles for legend section*/
 p {
-  font-size: 2rem;
-  padding: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 .points {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .coord {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .ball {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
 }
 
 #ball1 {
-  background-color: var(--ball1);
+    background-color: var(--ball1);
 }
 
 #ball2 {
-  background-color: var(--ball2);
+    background-color: var(--ball2);
 }
 
 @media only screen and (max-width: 767px) {
-  .content {
-    flex-direction: column;
-  }
+    .content {
+        flex-direction: column;
+    }
 
-  .sub {
-    margin-bottom: 1rem;
-  }
+    .sub {
+        margin-bottom: 1rem;
+    }
 
-  .intro {
-    width: 500px;
-  }
+    .intro {
+        width: 500px;
+    }

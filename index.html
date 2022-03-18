@@ -2,77 +2,77 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
-  <title>Equation of a Straight Line</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Equation of a Straight Line</title>
 </head>
 
 <body>
-  <h1>Equation of a Straight Line</h1>
-  <div class="intro">
-    <p>
-      Adjust the values on the left to see the effects of m and b on a straight line. Or drag the points on the graph!
-    </p>
-    <p>
-      y = <span style="color:#FB8B24">m</span>x + <span style="color:#c4b5E3">b</span>
-    </p>
+    <h1>Equation of a Straight Line</h1>
+    <div class="intro">
+        <p>
+            Adjust the values on the left to see the effects of m and b on a straight line. Or drag the points on the graph!
+        </p>
+        <p>
+            y = <span style="color:#FB8B24">m</span>x + <span style="color:#c4b5E3">b</span>
+        </p>
 
-
-
-
-  </div>
-
-  <div class="content">
-    <div class="sub" class="equation">
-      <div class="equation">
-        <p>y</p>
-        <p>=</p>
-        <div class="adjustables">
-          <button id='upM' type="button" name="button" title="increase slope">+</button>
-          <p id="slope">m</p>
-          <button id='downM' type="button" name="button" title="decrease slope">-</button>
-        </div>
-
-        <p>x</p>
-        <p>+</p>
-        <div class="adjustables">
-          <button id='upB' type="button" name="button" title="increase the y-intercept">+</button>
-          <p id="yIntercept">b</p>
-
-          <button id='downB' type="button" name="button" title="decrease the y-intercept">-</button>
-
-        </div>
-
-      </div>
-
-
-    </div>
-    <canvas id="canvas" class="sub" width="500" height="500" alt="interactive graph of straight line"></canvas>
-    <div class="sub">
-      <p>
-        Legend
-      </p>
-      <div class="points">
-        <div class="coord">
-          <div class="ball" id="ball1"> </div>
-          <p id="coordinates1">(x1,y1)</p>
-
-        </div>
-        <div class="coord">
-          <div class="ball" id="ball2"> </div>
-          <p id="coordinates2">(x2,y2)</p>
-        </div>
-
-      </div>
 
 
 
     </div>
-  </div>
 
-  <script type="text/javascript" src="app.js">
+    <div class="content">
+        <div class="sub" class="equation">
+            <div class="equation">
+                <p>y</p>
+                <p>=</p>
+                <div class="adjustables">
+                    <button id='upM' type="button" name="button" title="increase slope">+</button>
+                    <p id="slope">m</p>
+                    <button id='downM' type="button" name="button" title="decrease slope">-</button>
+                </div>
 
-  </script>
+                <p>x</p>
+                <p>+</p>
+                <div class="adjustables">
+                    <button id='upB' type="button" name="button" title="increase the y-intercept">+</button>
+                    <p id="yIntercept">b</p>
+
+                    <button id='downB' type="button" name="button" title="decrease the y-intercept">-</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <canvas id="canvas" class="sub" width="500" height="500" alt="interactive graph of straight line"></canvas>
+        <div class="sub">
+            <p>
+                Coordinates
+            </p>
+            <div class="points">
+                <div class="coord">
+                    <div class="ball" id="ball1"> </div>
+                    <p id="coordinates1">(x1,y1)</p>
+
+                </div>
+                <div class="coord">
+                    <div class="ball" id="ball2"> </div>
+                    <p id="coordinates2">(x2,y2)</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="app.js">
+
+    </script>
 </body>
 
 </html>
